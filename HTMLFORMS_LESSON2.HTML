@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+         <th>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="search" maxlength="10"><button>Отправить</button><br/>
+                    <input type="checkbox" name="site"><label for='site'>искать google</label><input type="checkbox" name='google'><label for='site'>искать на сайте</label>
+                    </fieldset>
+            </form>
+                </th>
+         <th>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="search" maxlength="10" autofocus='on'><label for="search">*</label><button>Искать</button><br/>
+                    <input type="checkbox" name="site"><label for='site'>искать google</label><input type="checkbox" name='google'><label for='site'>искать на сайте</label>
+                    <p align='left'><i>* - Обязательная строка</i></p>
+                    </fieldset>
+            </form>
+         </th>
+        </tr>
+        <tr>
+         <td>
+             <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+                <fieldset>
+                    <legend>Авторизация</legend>
+                    <input type="text" name="login" maxlength="10"><label for="search">* Логин</label><br/>
+                    <input type="text" name="password" maxlength="10" ><label for="password">* Пароль</label><br/>
+                    <input type="checkbox" name="a1" value="a1">Оставаться в системе<Br>
+                    <input type="submit" name='join' label='Войти'>
+                    <p><i>* - Обязательная строка</i></p>
+                </fieldset>
+        </form></td>
+         <td>
+             <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+            <fieldset>
+                <legend>Как вам?</legend>
+                <input type="checkbox" name='a2' value="a2">ничего<br/>
+                <input type="checkbox" name='a2' value="a2">неплохо<br/>
+                <input type="checkbox" name='a2' value="a2">хорошо<br/>
+                <input type="checkbox" name='a2' value="a2">супер<br/>
+                <input type="submit" label='Отправить'>
+            </fieldset>
+        </td>
+       </tr>
+       <tr>
+        <td>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST">
+                <fieldset>
+                    <legend>Оставьте ваш отзыв</legend>
+                    <input type="text" name="login" maxlength="10"><label for="search">* Имя</label><br/>
+                    <input type="text" name="password" maxlength="10" ><label for="password">* Email</label><br/>
+                    <label for="content">
+                    <textarea rows="2" cols="10" id="content" name="content"></textarea>
+                    <input type="submit" label='Отправить'>
+                    <p><i>* - Обязательная строка</i></p>
+                </fieldset>
+            </form></td>
+        <td>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST"></form>
+            <fieldset>
+                <legend>Города РБ</legend>
+                <fieldset>
+                    <select size="1" name="month[]">
+                        <option value="Брест">Брест</option>
+                        <option value="Минск">Минск</option>
+                        <option value="Витебск">Витебск</option>
+                    </select>
+                    <select name='cityes[]' size="11" multiple>
+                        <optgroup label="Беларусь">
+                            <option value="1">Минск</option>
+                            <option value="2">Брест</option>
+                            <option value="3">Гомель</option>
+                           </optgroup>
+                           <optgroup label="Россия">
+                            <option value="4">Казань</option>
+                            <option value="5">Москва</option>
+                            <option value="6">Санкт-Петебург</option>
+                           </optgroup>                          
+                    </select></p>
+                </fieldset>
+            </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Upload</legend>
+                <p>Файл:</p>
+                <p><input type="file" name="file_Field" dir=“ltr”></p>
+                <p>Срок хранения (года)</p>
+                <p><input type="text" name="years"><button>загрузить</button></p>
+            </fieldset>
+            </form>
+        </td>
+        <td>
+            <form action="https://fe.it-academy.by/TestForm.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" pattern="[а-яА-Я]">
+                    <p><i>Телефонный номер в формате</i></p>
+                    <p><i>XXX-XX-XXXXXXX</i></p>
+                    <input type="text" name="phone" pattern="375-29-[0-9]{7}" required placeholder="123-45-6789123"><br/>
+                    <button>загрузить</button>
+                </fieldset>
+            </form>
+        </td>
+      </tr>
+      </table>
+</body>
+</html>
